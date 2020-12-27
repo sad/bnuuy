@@ -21,7 +21,7 @@ $ cp .env.example .env
 
 after this, fill out the `.env` file with your tokens, and move any images you have to the `pics` folder.
 
-if you wish to change the frequency at which the bot tweets images, please edit the cron expression at the bottom which reads `0 * * * *` by default.
+if you wish to change the frequency at which the bot tweets images, please edit the cron expression at the bottom which reads `0 * * * *` by default. [this site](https://crontab.guru/examples.html) has examples of common crontab expressions.
 
 you can stop the bot from moving tweeted images out of the `pics` folder by commenting out anywhere that `setTweeted()` is called.
 
