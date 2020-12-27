@@ -1,0 +1,21 @@
+{
+  "name": "bnuuy",
+  "version": "1.0.0",
+  "main": "./src/bnuuy.js",
+  "author": "reid",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/bnuuy.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cron": "^1.8.2",
+    "dotenv-safe": "^8.2.0",
+    "twitter-lite": "^0.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}

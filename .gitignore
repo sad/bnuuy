@@ -1,0 +1,5 @@
+node_modules/
+pics/
+pics-tweeted/
+.env
+.DS_Store
