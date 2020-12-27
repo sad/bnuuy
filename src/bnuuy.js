@@ -6,15 +6,13 @@ const logger = require('./logger');
 
 require('dotenv-safe').config();
 
-const client = (subdomain = 'api') => {
-  return new Twitter({
-    subdomain,
-    consumer_key: process.env.API_KEY,
-    consumer_secret: process.env.API_SECRET,
-    access_token_key: process.env.ACCESS,
-    access_token_secret: process.env.ACCESS_SECRET,
-  });
-};
+const client = (subdomain = 'api') => new Twitter({
+  subdomain,
+  consumer_key: process.env.API_KEY,
+  consumer_secret: process.env.API_SECRET,
+  access_token_key: process.env.ACCESS,
+  access_token_secret: process.env.ACCESS_SECRET,
+});
 
 const mainClient = client();
 const imgClient = client('upload');
