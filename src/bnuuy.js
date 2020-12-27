@@ -67,12 +67,12 @@ const checkAuth = () => {
 };
 
 checkAuth();
-// pickImage();
+pickImage();
 
 // every hour
 const schedule = new cron.CronJob('0 * * * *', () => {
   logger.log('Attempting to post new Tweet');
-  // pickImage();
+  pickImage();
 });
 
 schedule.start();
